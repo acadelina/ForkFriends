@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="520.0" prefWidth="667.0" style="-fx-background-color: fffef4;" stylesheets="@../css/style2.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.lab6.controller.FeedController">
+    <children>
+        <ImageView fitHeight="150.0" fitWidth="158.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/ForkFriends(1).png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="113.0" fitWidth="141.0" layoutX="533.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/ForkFriends(2).png" />
+            </image>
+        </ImageView>
+        <Button layoutX="533.0" layoutY="244.0" mnemonicParsing="false" onAction="#handleProfile" prefHeight="27.0" prefWidth="113.0" style="-fx-background-color: #5a7561;" text="My profile" textFill="#fffef4">
+            <font>
+                <Font name="Lucida Bright Demibold" size="14.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="134.0" fitWidth="113.0" layoutX="16.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/ForkFriends(3).png" />
+            </image>
+        </ImageView>
+        <Button contentDisplay="CENTER" layoutX="16.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleFriends" prefHeight="27.0" prefWidth="113.0" style="-fx-background-color: #5a7561;" text="Friends" textAlignment="CENTER" textFill="#fffef4">
+            <font>
+                <Font name="Lucida Bright Demibold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="533.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleChats" prefHeight="27.0" prefWidth="113.0" style="-fx-background-color: #5a7561;" text="Chats" textFill="#fffef4">
+            <font>
+                <Font name="Lucida Bright Demibold" size="14.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="133.0" fitWidth="105.0" layoutX="538.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/ForkFriends (5).png" />
+            </image>
+        </ImageView>
+      <VBox layoutX="21.0" layoutY="150.0" prefHeight="98.0" prefWidth="97.0">
+         <children>
+            <ImageView fitHeight="105.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ForkFriends(8).png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <ListView fx:id="PostsList" layoutX="141.0" prefHeight="521.0" prefWidth="377.0" style="-fx-background-color: fffef4;" />
+      <ImageView fitHeight="58.0" fitWidth="54.0" layoutX="563.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ForkFriends(7).png" />
+         </image>
+      </ImageView>
+        <TextField fx:id="RequestsNumber" alignment="CENTER" blendMode="SRC_ATOP" layoutX="574.0" layoutY="34.0" prefHeight="27.0" prefWidth="32.0" style="-fx-background-color: transparent;">
+            <font>
+                <Font name="Lucida Bright Demibold" size="13.0" />
+            </font>
+        </TextField>
+      <Button layoutX="16.0" layoutY="244.0" mnemonicParsing="false" onAction="#handleAddPost" prefHeight="27.0" prefWidth="113.0" style="-fx-background-color: #5a7561;" text="Add Post" textFill="#fffef4">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+      </Button>
+    </children>
+
+</AnchorPane>

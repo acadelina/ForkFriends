@@ -1,0 +1,22 @@
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    //-fx-background-color: linear-gradient(rgba(232, 127, 230, 0.22), rgba(232, 127, 230, 0.5));
+   // -fx-effect: dropshadow( three-pass-box , rgb(236, 150, 217), 5, 0.0 , 0 , 1 );
+}
+.label {
+    -fx-font-size: 18px;
+    -fx-font-family: "Lucida Bright";
+    -fx-font-weight:bold;
+    -fx-text-fill: #fffef4;
+    -fx-background-color: #b84c65;
+    /*-fx-effect: dropshadow( gaussian , rgba(232, 127, 230, 0.5), 0,0,0,1 );*/
+}
+/*.table-row-cell:selected {
+    -fx-background-color: rgba(246, 150, 150, 0.65);
+
+}*/
+.table-row-cell:selected .text {
+    -fx-fill: rgb(255, 255, 255);
+}

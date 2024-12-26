@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="384.0" prefWidth="599.0" style="-fx-background-color: #fffef4;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.lab6.controller.LogInController">
+   <children>
+      <ImageView fitHeight="271.0" fitWidth="250.0" layoutX="166.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="138.0" AnchorPane.leftAnchor="166.0" AnchorPane.rightAnchor="183.0" AnchorPane.topAnchor="-25.0">
+         <image>
+            <Image url="@../images/ForkFriends.png" />
+         </image></ImageView>
+      <Label layoutX="197.0" layoutY="175.0" prefHeight="31.0" prefWidth="67.0" text="Username:" textFill="#5a7561">
+         <font>
+            <Font name="Lucida Bright" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="212.0" prefHeight="25.0" prefWidth="64.0" text="Password:" textFill="#5a7561">
+         <font>
+            <Font name="Lucida Bright" size="13.0" />
+         </font>
+      </Label>
+      <PasswordField layoutX="274.0" layoutY="212.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField layoutX="274.0" layoutY="178.0" prefHeight="25.0" prefWidth="112.0" />
+      <Label layoutX="239.0" layoutY="297.0" prefHeight="25.0" prefWidth="121.0" text="Still not a forkFriend?" textFill="#b84c65" />
+      <Button layoutX="223.0" layoutY="322.0" mnemonicParsing="false" onAction="#createAccountButtonClicked" prefHeight="22.0" prefWidth="141.0" style="-fx-background-color: b84c65;" text="Create your account" textFill="#fffef4">
+         <font>
+            <Font name="Lucida Bright Demibold" size="11.0" />
+         </font>
+      </Button>
+      <Button layoutX="266.0" layoutY="249.0" mnemonicParsing="false" onAction="#loginButtonClicked" style="-fx-background-color: b84c65;" text="Login" textFill="#fffef4">
+         <font>
+            <Font name="Lucida Bright Demibold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

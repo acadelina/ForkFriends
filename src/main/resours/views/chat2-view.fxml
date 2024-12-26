@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="538.0" style=" -fx-background-image: url('@../images/ForkFriends.png')" stylesheets="@../css/style2.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.lab6.controller.ChatsController2">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="537.0">
+
+        <ImageView fitHeight="375.0" fitWidth="373.0" layoutX="162.0" opacity="0.72" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/ForkFriends.png" />
+            </image>
+        </ImageView>
+        <SplitPane dividerPositions="0.29797979797979796" layoutY="-7.0" prefHeight="327.0" prefWidth="491.0"  AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <TableView fx:id="chatFriendsTable" layoutX="-40.0" layoutY="-118.0" onMouseClicked="#chatFriendsTableClicked" prefHeight="398.0" prefWidth="156.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <columns>
+                                <TableColumn fx:id="chatFriendsTableNameColumn" prefWidth="155.0" text="Name" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #fffef4; -fx-background-size: cover;">
+
+                    <children>
+
+                        <ScrollPane fx:id="chatScrollPane" fitToWidth="true" hbarPolicy="NEVER" prefHeight="302.0" prefWidth="340.0" style="fx-background-color: #fffef4;" vbarPolicy="AS_NEEDED" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+                            <content>
+
+                                <VBox fx:id="chatVBox" alignment="TOP_LEFT" spacing="5">
+
+                                </VBox>
+                            </content>
+                        </ScrollPane>
+
+                        <TextField fx:id="messageTextField" layoutX="5.0" layoutY="293.0" prefHeight="25.0" prefWidth="289.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="51.0" />
+                        <Button fx:id="sendButton" layoutX="249.0" layoutY="245.0" mnemonicParsing="false" onAction="#sendButtonClicked" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: #5a7561;" text="Send" textFill="#fffef4" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                            <font>
+                                <Font name="Lucida Bright Demibold" size="12.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+
+    </AnchorPane>
+
+</AnchorPane>

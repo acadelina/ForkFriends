@@ -1,0 +1,8 @@
+
+#ProfilePhoto {
+    -fx-border-color: #5a7561;
+    -fx-border-width: 5px;
+    -fx-border-radius: 165px;
+    -fx-background-radius: 165px;
+    -fx-effect: dropshadow(gaussian, #5a7561, 10, 0.5, 0, 0);
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="520.0" prefWidth="667.0" style="-fx-background-color: fffef4;" stylesheets="@../css/style2.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.lab6.controller.FriendsController">
+   <children>
+      <ImageView fitHeight="155.0" fitWidth="176.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ForkFriends(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="98.0" layoutX="546.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ForkFriends(3).png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="friendsTable" layoutX="46.0" layoutY="132.0" prefHeight="274.0" prefWidth="247.0">
+        <columns>
+          <TableColumn fx:id="username" prefWidth="242.6666603088379" text="Friends List" />
+        </columns>
+      </TableView>
+      <TableView fx:id="requestsTable" layoutX="372.0" layoutY="132.0" prefHeight="300.0" prefWidth="247.0">
+        <columns>
+          <TableColumn fx:id="request" prefWidth="243.0" text="Requests" />
+        </columns>
+      </TableView>
+      <HBox layoutX="389.0" layoutY="447.0" prefHeight="43.0" prefWidth="230.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleAcceptFriendButtonAction" prefHeight="43.0" prefWidth="93.0" style="-fx-background-color: #5a7561;" text="Accept" textFill="#fffef4">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="13.0" />
+               </font>
+            </Button>
+            <Separator opacity="0.0" orientation="VERTICAL" prefHeight="66.0" prefWidth="26.0" />
+            <Button mnemonicParsing="false" onAction="#handleDeclineButtonAction" prefHeight="42.0" prefWidth="97.0" style="-fx-background-color: b84c65;" text="Delete" textFill="#fffef4">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="13.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <Label fx:id="Friends" layoutX="447.0" layoutY="36.0" prefHeight="90.0" prefWidth="98.0" text="FRIENDS" />
+      <HBox layoutX="55.0" layoutY="447.0" prefHeight="43.0" prefWidth="230.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleAddButtonAction" prefHeight="43.0" prefWidth="100.0" style="-fx-background-color: b84c65;" text="Add" textFill="#fffef4">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="13.0" />
+               </font>
+            </Button>
+            <Separator opacity="0.0" orientation="VERTICAL" prefHeight="66.0" prefWidth="26.0" />
+            <Button mnemonicParsing="false" onAction="#handleRemoveFriendButtonAction" prefHeight="43.0" prefWidth="97.0" style="-fx-background-color: b84c65;" text="Remove" textFill="#fffef4">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="47.0" layoutY="406.0" prefHeight="27.0" prefWidth="247.0">
+         <children>
+            <Button fx:id="prevButton" mnemonicParsing="false" onAction="#prevButtonClicked" prefHeight="25.0" prefWidth="123.5" style="-fx-background-color: #5a7561;" text="Previous" textFill="#fffef4">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="nextButton" mnemonicParsing="false" onAction="#nextButtonClicked" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #5a7561;" text="Next" textFill="#fffef4">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

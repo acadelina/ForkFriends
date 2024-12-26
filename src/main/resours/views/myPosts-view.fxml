@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="511.0" style="-fx-background-color: fffef4;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.lab6.controller.MyPostsController">
+   <children>
+      <ImageView fitHeight="114.0" fitWidth="110.0" layoutX="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ForkFriends(1).png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="14.0" layoutY="111.0" prefHeight="172.0" prefWidth="100.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleDeletePost" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: b84c65;" text="Delete" textAlignment="CENTER" textFill="#fffef4">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Button>
+            <Separator opacity="0.0" prefHeight="23.0" prefWidth="100.0" style="-fx-background-color: fffef4;" />
+            <Button mnemonicParsing="false" onAction="#handleAddPost" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: b84c65;" text="Add" textFill="#fffef4">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <ListView fx:id="PostsList" layoutX="128.0" prefHeight="429.0" prefWidth="377.0" style="-fx-background-color: fffef4;" />
+   </children>
+</AnchorPane>

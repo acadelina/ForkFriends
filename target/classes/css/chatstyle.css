@@ -1,0 +1,14 @@
+.text-message {
+    -fx-padding: 10;
+    -fx-background-radius: 15px;
+    -fx-wrap-text: true;
+    -fx-max-width: 200px;
+}
+.text-message-sent {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}
+.text-message-received {
+    -fx-background-color: rgba(246, 150, 150, 0.65);
+    -fx-text-fill: #ffffff;
+}
